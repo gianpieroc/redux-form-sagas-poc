@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+body {
+  background-image: url(./background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway";
+  flex: 1;
+  display: flex;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+button[type="submit"] {
+  font-size: 18px;
+  display: flex;
+  align-self: center;
+  padding: 0 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  border-radius: 5px;
+  height: 40px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+button[type="submit"]:disabled {
+  background-color: transparent;
+  color: rgba(0,0,0,0.1);
+  border-radius: 5px;
+  height: 40px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.form-submission > h1 {
+  font-weight: lighter;
+  align-self: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    "Raleway", monospace;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+span.error {
+  color: red;
+  font-size: 14px;
+  min-height: 16px;
+}
+
+.input-container {
+  display: flex;
+}
+
+.input-container label {
+  align-self: center;
+  padding-right: 25px;
+  font-size: 16px;
+  text-align: right;
+  flex: 0.6;
+}
+
+.input-container > input:focus {
+  outline: none;
+}
+
+.input-container > input {
+  margin: 10px;
+  text-align: center;
+  color: black;
+  margin: 20px 0px;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 1em;
+  display: block;
+  border-color: rgba(200, 200, 200, 0.9);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  height: 30px;
+  flex: 1;
+      min-width: 250px;
+
+}
